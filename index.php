@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="assets/css/foundation.min.css" />
         <link rel="stylesheet" href="assets/css/app.css" />
     </head>
+    
+    <!-- Liked the Design? Want the code?
+    I have made this available on https://bitbucket.org/jigarjain/profile-design
+    -->
 
    <body>
         <div class="row">

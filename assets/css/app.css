@@ -1,111 +1,272 @@
-/* 
-    Document   : app
-    Author     : Jigar
-    Description:
-        Purpose of the stylesheet follows.
-        
-        To impress the Viewer
-*/
-
-body{
-    border-top:3px solid #72C02C;
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
-
-a, a:hover{
-    color: #72C02C;
-    text-decoration: underline;
+body {
+  margin: 0;
 }
-
-.heading{
-    overflow: hidden;
-    padding: 0 0 8px;
-    position: relative;
-    text-transform: capitalize;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
 }
-
-.heading:after {
-    background: none repeat scroll 0 0 #72C02C;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    top: 30px;
-    width: 80px;
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
 }
-
-.title{
-    padding: 15px;
-    text-align: center;
+audio:not([controls]) {
+  display: none;
+  height: 0;
 }
-
-.title h1 a, .title h1 a:hover{
-    color: inherit;
-    text-decoration: none;
+[hidden],
+template {
+  display: none;
 }
-
-.timeline, .skills, .activities, .social{
-    margin-bottom: 15px;
+a {
+  background-color: transparent;
 }
-
-.timeline ul, .skills ul, .activities ul, .wishlist ul{
-    list-style-type: none;
+a:active,
+a:hover {
+  outline: 0;
 }
-
-.timeline ul li, .activities ul li, .wishlist ul li{
-    padding-top: 10px;
-    padding-bottom: 10px;
+abbr[title] {
+  border-bottom: 1px dotted;
 }
-
-.timeline ul li span{
-    color: #7f8c8d;
-    font-style: italic;
+b,
+strong {
+  font-weight: bold;
 }
-
-.skills ul li{
-    display: inline;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
+dfn {
+  font-style: italic;
 }
-
-.skills ul li .label{
-    font-size:inherit;
-    line-height: inherit;
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
-
-.social{
-    margin-bottom: 30px;
-    text-align: center;
+mark {
+  background: #ff0;
+  color: #000;
 }
-
-.social a{
-    margin: 5px 10px;
-    font-size: 20px;
+small {
+  font-size: 80%;
 }
-
-.social a.fb{
-    color: #4C66A4;
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
-
-.social a.tw{
-    color: #55ACEE;
+sup {
+  top: -0.5em;
 }
-
-.social a.gp{
-    color: #DB4B39;
+sub {
+  bottom: -0.25em;
 }
-
-.social a.bb{
-    color: #205081;
+img {
+  border: 0;
 }
-
-.social a.so{
-    color: #e67e22;
+svg:not(:root) {
+  overflow: hidden;
 }
-
-.last-update{
-    font-size: 11px;
-    text-align: right;
-    font-style: italic;
+figure {
+  margin: 1em 40px;
 }
-
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/** Fonts **/
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #2c3e50;
+  background-color: #eeeeee;
+}
+.page {
+  margin: 75px auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+.name {
+  margin: 0;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 200%;
+  color: #00BFA5;
+  text-align: right;
+}
+.another-title {
+  margin: 0;
+  font-weight: 200;
+  font-size: 28px;
+  color: #FF8A80;
+}
+.item {
+  margin-bottom: 30px;
+}
+.item .list-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.item .list-container li {
+  padding: 5px 0;
+}
+.item .list-container a {
+  display: block;
+  position: relative;
+  color: #95a5a6;
+  text-decoration: none;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+.item .list-container a:hover {
+  color: #B388FF;
+}
+.item .list-container a .date {
+  position: absolute;
+  right: 0;
+}
+.item .more-link {
+  text-align: center;
+}
+.item .more-link a {
+  color: #3498db;
+  text-decoration: none;
+}
+.divider {
+  margin: 0 auto 30px;
+  border-bottom: 1px dashed #B9F6CA;
+}
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.social li {
+  display: inline;
+  padding: 5px 10px;
+}
+.social a {
+  color: #16a085;
+  text-decoration: none;
+}

@@ -1,39 +1,39 @@
 module.exports = {
     'name': 'Jigar Jain',
-    'aboutMe': 'I am a \'web artisan\' from Bangalore who loves building beautiful websites. Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.',
+    'aboutMe': 'Web artisan from Bangalore, who loves CSS. Also known to be a 9gagger, Batman fan, Calvin & Hobbes fanatic',
     'items': [
         {
             'title': 'Articles',
             'content': [
                 {
                     'text': 'Sums up my last 2 hours',
-                    'url': '#',
-                    'date': '05th Aug 14'
+                    'url': 'http://jigarjain.com/blog/sums-last-2-hours/',
+                    'date': '6th Mar, 14 '
                 },
                 {
                     'text': 'Hiding email address in ...',
-                    'url': '#',
-                    'date': '23rd Nov 14'
+                    'url': 'http://jigarjain.com/blog/hiding-email-address-in-html-using-js/',
+                    'date': '6th Feb, 14'
                 },
                 {
-                    'text': 'Moral Reasoning & the ...',
-                    'url': '#',
-                    'date': '12th Jul 13'
+                    'text': 'Moral Reasoning & the Trolley Problem',
+                    'url': 'http://jigarjain.com/blog/moral-reasoning-trolley-problem/',
+                    'date': '24th Jan, 14'
                 },
                 {
                     'text': 'DYK: Simple way to get data uri ...',
-                    'url': '#',
-                    'date': '30th Apr 13'
+                    'url': 'http://jigarjain.com/blog/simple-way-to-get-data-uri-of-image/',
+                    'date': '23rd Jan, 14'
                 },
                 {
-                    'text': 'Logging/Saving all DB queries ...',
-                    'url': '#',
-                    'date': '2nd Jan 13'
+                    'text': 'The Holy Geeta: Inspired Work',
+                    'url': 'http://jigarjain.com/blog/the-holy-geeta-inspired-work/',
+                    'date': '8th Jan, 14'
                 },
             ],
             'metaLink': {
                 'text': 'More articles',
-                'url': '/blog'
+                'url': 'http://jigarjain.com/blog'
             }
         },
         {
@@ -41,11 +41,19 @@ module.exports = {
             'content': [
                 {
                     'text': 'countTags (Some parsing HTML & CSS)',
-                    'url': '#'
+                    'url': 'https://github.com/jigarjain/countTags'
                 },
                 {
                     'text': 'mysqlbkup (Backing up mysql db & sending it via email)',
-                    'url': '#'
+                    'url': 'https://github.com/jigarjain/mysqlbkup'
+                },
+                {
+                    'text': 'Scraper for zenpencils',
+                    'url': 'https://github.com/jigarjain/zenpencils'
+                },
+                {
+                    'text': 'Article #1 on DigitalOcean',
+                    'url': 'https://www.digitalocean.com/community/tutorials/how-to-install-opencart-on-an-ubuntu-12-04-vps'
                 }
             ]
         },

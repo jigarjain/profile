@@ -1,0 +1,20 @@
+{
+  "name": "profile",
+  "version": "2.0.0",
+  "description": "Homepage for jigarjain.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:jigarjain/profile-design.git"
+  },
+  "author": "Jigar Jain",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.2.0",
+    "express": "^4.10.2",
+    "handlebars": "^2.0.0"
+  }
+}

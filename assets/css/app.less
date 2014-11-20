@@ -1,16 +1,15 @@
 @import 'normalize.less';
 @import 'elements.less';
-@import 'swatch.less';
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    color: @body-text-color;
-    background-color: @bg-color;
+    color: #2c3e50;
+    background-color: #eee;
 }
 
 .page {
-    margin: 75px auto;
+    margin: 70px auto 35px;
     padding: 15px;
     width: 100%;
     max-width: 600px;
@@ -28,12 +27,20 @@ body {
     text-align: right;
 }
 
+.about-me {
+    line-height: 150%;
+}
+
 
 .another-title {
     margin: 0;
     font-weight: 200;
     font-size: 28px;
     color: #FF8A80;
+
+    &.title-404 {
+        text-align: center;
+    }
 }
 
 .item {
@@ -62,6 +69,7 @@ body {
             .date {
                 position: absolute;
                 right: 0;
+                font-style: italic;
             }
         }
     }
@@ -94,6 +102,17 @@ body {
 
     a {
         color: #16a085;
+        text-decoration: none;
+    }
+}
+
+.format {
+    display: block;
+    margin-bottom: 35px;
+    text-align: center;
+
+    a {
+        color: #3498db;
         text-decoration: none;
     }
 }

@@ -9,54 +9,53 @@
     <body>
 
         <div class="page">
-            <h1 class="name">Jigar Jain</h1>
-            <p class="about-me">
-                I am a 'web artisan' from Bangalore who loves building beautiful websites. Grumpy wizards make toxic brew for the evil Queen and Jack.
-                Grumpy wizards make toxic brew for the evil Queen and Jack.
-            </p>
+            <h1 class="name">{{name}}</h1>
+            <p class="about-me">{{aboutMe}}</p>
 
+            {{#each items}}
             <div class="item">
-                <h3 class="another-title">Articles</h3>
+                <h3 class="another-title">{{title}}</h3>
                 <ul class="list-container">
-                    <li><a href="#">Sums up my last 2 hours <span class="date">23rd Nov 14</span></a></li>
-                    <li><a href="#">Hiding email address in ...<span class="date">05th Aug 14</span></a></li>
-                    <li><a href="#">Moral Reasoning & the ...<span class="date">12th Jul 13</span></a></li>
-                    <li><a href="#">DYK: Simple way to get data uri ...<span class="date">30th Apr 13</span></a></li>
-                    <li><a href="#">Logging/Saving all DB queries ...<span class="date">2nd Jan 13</span></a></li>
+                    {{#each content}}
+                    <li><a href="{{url}}"> {{text}} {{#if date}}<span class="date">{{date}}</span>{{/if}}</a></li>
+                    {{/each}}
                 </ul>
+                {{#if metaLink}}
                 <p class="more-link">
-                    <a href="/blog" title="Blog">More articles</a>
+                    <a href="{{metaLink.url}}">{{metaLink.text}}</a>
                 </p>
+                {{/if}}
             </div>
-
-            <div class="item">
-                <h3 class="another-title">Side-kicks</h3>
-                <ul class="list-container">
-                    <li><a href="#">countTags (Some parsing HTML & CSS) <span class="date">23rd Nov 14</span></a></li>
-                    <li><a href="#">mysqlbkup (Backing up mysql db & sending it via email)<span class="date">05th Aug 14</span></a></li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <h3 class="another-title">Slides/Presentations</h3>
-                <ul class="list-container">
-                    <li><a href="#">Simplifying CSS using Less <span class="date">8th Nov 14</span></a></li>
-                </ul>
-            </div>
+            {{/each}}
 
             <div class="divider"></div>
 
             <div class="item">
                 <ul class="social">
-                    <li><a href="https://twitter.com/ragiJ" title="twitter" class="tw">twitter</a></li>
-                    <li><a href="https://github.com/jigarjain" title="github" class="gh">github</a></li>
-                    <li><a href="http://stackexchange.com/users/1005958/jigar-jain?tab=accounts" title="stackexchange" class="se">stackexchange</a></li>
+                    {{#each social}}
+                    <li><a href="{{url}}">{{text}}</a></li>
+                    {{/each}}
                 </ul>
             </div>
 
         </div> <!-- /.page -->
 
+        <small class="format">
+            <a href="/?format=json" rel="nofollow">View in json format</a>
+        </small>
+
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300">
         <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+        <!-- <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36996932-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script> -->
     </body>
 </html>

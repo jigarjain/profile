@@ -1,6 +1,6 @@
 module.exports = {
     'name': 'Jigar Jain',
-    'aboutMe': 'Web artisan from Bangalore, who loves CSS. Also known to be a 9gagger, Batman fan, Calvin & Hobbes fanatic',
+    'aboutMe': 'Web artisan from Bangalore, who loves CSS & design. Also known to be a Batman and Calvin-Hobbes fanatic',
     'items': [
         {
             'title': 'Articles',

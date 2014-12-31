@@ -6,6 +6,11 @@ module.exports = {
             'title': 'Articles',
             'content': [
                 {
+                    'text': '2014: Year in Review',
+                    'url': 'http://jigarjain.com/blog/2014-year-review/',
+                    'date': '31st Dec, 14 '
+                },
+                {
                     'text': 'Sums up my last 2 hours',
                     'url': 'http://jigarjain.com/blog/sums-last-2-hours/',
                     'date': '6th Mar, 14 '
@@ -24,12 +29,7 @@ module.exports = {
                     'text': 'DYK: Simple way to get data uri ...',
                     'url': 'http://jigarjain.com/blog/simple-way-to-get-data-uri-of-image/',
                     'date': '23rd Jan, 14'
-                },
-                {
-                    'text': 'The Holy Geeta: Inspired Work',
-                    'url': 'http://jigarjain.com/blog/the-holy-geeta-inspired-work/',
-                    'date': '8th Jan, 14'
-                },
+                }
             ],
             'metaLink': {
                 'text': 'More articles',

@@ -40,6 +40,10 @@ module.exports = {
             'title': 'Side-kicks',
             'content': [
                 {
+                    'text': 'CSSZen (Collection of some stuff made using CSS)',
+                    'url': 'http://jigarjain.github.com/csszen'
+                },
+                {
                     'text': 'countTags (Some parsing HTML & CSS)',
                     'url': 'https://github.com/jigarjain/countTags'
                 },

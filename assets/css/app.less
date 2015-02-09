@@ -1,29 +1,47 @@
 @import 'normalize.less';
 @import 'elements.less';
 
+/** Colors */
+@primary-color: #9C27B0;
+@secondary-color: #aa00ff;
+@primary-link-color: #ce93d8;
+@secondary-link-color: #ce93d8;
+
 body {
+    min-height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     color: #2c3e50;
-    background-color: #eee;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, @primary-color, @primary-color 40vh, #F5F5F5 40vh, #F5F5F5);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    -webkit-animation: slideup 1s;
+    -moz-animation: slideup 1s;
+    animation: slideup 1s;
 }
 
 .page {
-    margin: 70px auto 35px;
+    margin: 20vh auto 30px;
     padding: 15px;
-    width: 100%;
     max-width: 600px;
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
     .drop-shadow(0, 2px, 5px, 0.26);
 }
 
 .name {
     margin: 0;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 40px;
     line-height: 200%;
-    color: #00BFA5;
+    color: @primary-color;
     text-align: right;
 }
 
@@ -36,7 +54,7 @@ body {
     margin: 0;
     font-weight: 200;
     font-size: 28px;
-    color: #FF8A80;
+    color: @secondary-color;
 
     &.title-404 {
         text-align: center;
@@ -59,11 +77,10 @@ body {
             display: block;
             position: relative;
             color: #919899;
-            text-decoration: none;
             .transition(0.7s);
 
             &:hover {
-                color: #B388FF;
+                color: @primary-link-color;
             }
 
             .date {
@@ -78,15 +95,14 @@ body {
         text-align: center;
 
         a {
-            color: #3498db;
-            text-decoration: none;
+            color: @secondary-link-color;
         }
     }
 }
 
 .divider {
     margin: 0 auto 30px;
-    border-bottom: 1px dashed #B9F6CA;
+    border-bottom: 1px dashed @secondary-link-color;
 }
 
 .social {
@@ -101,8 +117,7 @@ body {
     }
 
     a {
-        color: #16a085;
-        text-decoration: none;
+        color: @secondary-link-color;
     }
 }
 
@@ -112,7 +127,32 @@ body {
     text-align: center;
 
     a {
-        color: #3498db;
-        text-decoration: none;
+        color: @secondary-color;
+    }
+}
+
+@keyframes slideup {
+    from {
+        top: 1000px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes slideup {
+    from {
+        top: 1000px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .date {
+        display: none;
     }
 }

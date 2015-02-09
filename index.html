@@ -8,45 +8,47 @@
 
     <body>
 
-        <div class="page">
-            <h1 class="name">{{name}}</h1>
-            <p class="about-me">{{aboutMe}}</p>
+        <div class="container">
+            <div class="page">
+                <h1 class="name">{{name}}</h1>
+                <p class="about-me">{{aboutMe}}</p>
 
-            {{#each items}}
-            <div class="item">
-                <h3 class="another-title">{{title}}</h3>
-                <ul class="list-container">
-                    {{#each content}}
-                    <li><a href="{{url}}"> {{text}} {{#if date}}<span class="date">{{date}}</span>{{/if}}</a></li>
-                    {{/each}}
-                </ul>
-                {{#if metaLink}}
-                <p class="more-link">
-                    <a href="{{metaLink.url}}">{{metaLink.text}}</a>
-                </p>
-                {{/if}}
-            </div>
-            {{/each}}
+                {{#each items}}
+                <div class="item">
+                    <h3 class="another-title">{{title}}</h3>
+                    <ul class="list-container">
+                        {{#each content}}
+                        <li><a href="{{url}}"> {{text}} {{#if date}}<span class="date">{{date}}</span>{{/if}}</a></li>
+                        {{/each}}
+                    </ul>
+                    {{#if metaLink}}
+                    <p class="more-link">
+                        <a href="{{metaLink.url}}">{{metaLink.text}}</a>
+                    </p>
+                    {{/if}}
+                </div> <!-- /.item -->
+                {{/each}}
 
-            <div class="divider"></div>
+                <div class="divider"></div>
 
-            <div class="item">
-                <ul class="social">
-                    {{#each social}}
-                    <li><a href="{{url}}">{{text}}</a></li>
-                    {{/each}}
-                </ul>
-            </div>
+                <div class="item">
+                    <ul class="social">
+                        {{#each social}}
+                        <li><a href="{{url}}">{{text}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div> <!-- /.item -->
 
-        </div> <!-- /.page -->
+            </div> <!-- /.page -->
 
-        <small class="format">
-            <a href="/?format=json" rel="nofollow">View in json format</a>
-        </small>
+            <small class="format">
+                <a href="/?format=json" rel="nofollow">View in json format</a>
+            </small>
+        </div>
 
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300">
         <link rel="stylesheet" type="text/css" href="assets/css/app.css">
-        <!-- <script type="text/javascript">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300">
+        <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-36996932-1']);
             _gaq.push(['_trackPageview']);
@@ -56,6 +58,6 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script> -->
+        </script>
     </body>
 </html>

@@ -1,7 +1,52 @@
 module.exports = {
     'name': 'Jigar Jain',
-    'aboutMe': 'Web artisan from Bangalore, who loves CSS & design. Also known to be a Batman and Calvin-Hobbes fanatic',
+    'aboutMe': 'Web artisan from Bangalore, who loves CSS & design. Also known to be a Batman and Calvin-Hobbes fanatic.',
     'items': [
+        {
+            'title': 'Work log',
+            'content': [
+                {
+                    'text': 'Grallo',
+                    'url': 'https://grallo.com/',
+                    'date': 'Jun \'14 - Current'
+                },
+                {
+                    'text': 'ProjectHeena',
+                    'url': 'https://projectheena.com',
+                    'date': 'Sep \'12 - May \'14'
+                },
+                {
+                    'text': 'Kodeplay (Intern)',
+                    'url': 'http://kodeplay.com',
+                    'date': 'Jun \'11 - Mar \'12'
+                }
+            ]
+        },
+        {
+            'title': 'Side-kicks',
+            'content': [
+                {
+                    'text': 'CSSZen (Collection of some stuff made using CSS)',
+                    'url': 'http://jigarjain.github.com/csszen'
+                },
+                {
+                    'text': 'countTags (Some parsing HTML & CSS)',
+                    'url': 'https://github.com/jigarjain/countTags'
+                },
+                {
+                    'text': 'mysqlbkup (Backing up mysql db & sending it via email)',
+                    'url': 'https://github.com/jigarjain/mysqlbkup'
+                },
+                {
+                    'text': 'Scraper for zenpencils',
+                    'url': 'https://github.com/jigarjain/zenpencils'
+                },
+                {
+                    'text': 'Article #1 on DigitalOcean',
+                    'url': 'https://www.digitalocean.com/community/tutorials/how-to-install-opencart-on-an-ubuntu-12-04-vps'
+                }
+            ]
+        },
         {
             'title': 'Articles',
             'content': [
@@ -35,31 +80,6 @@ module.exports = {
                 'text': 'More articles',
                 'url': 'http://jigarjain.com/blog'
             }
-        },
-        {
-            'title': 'Side-kicks',
-            'content': [
-                {
-                    'text': 'CSSZen (Collection of some stuff made using CSS)',
-                    'url': 'http://jigarjain.github.com/csszen'
-                },
-                {
-                    'text': 'countTags (Some parsing HTML & CSS)',
-                    'url': 'https://github.com/jigarjain/countTags'
-                },
-                {
-                    'text': 'mysqlbkup (Backing up mysql db & sending it via email)',
-                    'url': 'https://github.com/jigarjain/mysqlbkup'
-                },
-                {
-                    'text': 'Scraper for zenpencils',
-                    'url': 'https://github.com/jigarjain/zenpencils'
-                },
-                {
-                    'text': 'Article #1 on DigitalOcean',
-                    'url': 'https://www.digitalocean.com/community/tutorials/how-to-install-opencart-on-an-ubuntu-12-04-vps'
-                }
-            ]
         },
         {
             'title': 'Slides/Presentations',

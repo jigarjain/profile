@@ -3,7 +3,6 @@ var cfg        = require('./config'),
     compress   = require('compression'),
     fs         = require('fs'),
     handlebars = require('handlebars'),
-    profile    = require('./profile'),
     app        = express();
 
 // Use gzip compression
@@ -20,6 +19,7 @@ app.set('json spaces', 4);
 
 // handle home page
 app.get('/', function (req, res) {
+    var profile = require('./profile');
 
     if (req.query.format === 'json') {
         res.jsonp(profile);

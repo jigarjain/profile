@@ -26,16 +26,16 @@ module.exports = {
             'title': 'Side-kicks',
             'content': [
                 {
+                    'text': 'MySanta (India\'s 1st online secret santa)',
+                    'url': 'https://mysanta.in/'
+                },
+                {
                     'text': 'CSSZen (Collection of some stuff made using CSS)',
                     'url': 'http://jigarjain.github.com/csszen'
                 },
                 {
-                    'text': 'countTags (Some parsing HTML & CSS)',
-                    'url': 'https://github.com/jigarjain/countTags'
-                },
-                {
-                    'text': 'mysqlbkup (Backing up mysql db & sending it via email)',
-                    'url': 'https://github.com/jigarjain/mysqlbkup'
+                    'text': 'countTags (Some HTML & CSS parsing stuff)',
+                    'url': 'https://jigarjain.com/apps/countTags'
                 },
                 {
                     'text': 'Scraper for zenpencils',

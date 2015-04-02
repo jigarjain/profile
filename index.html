@@ -1,66 +1,198 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jigar Jain - Web Artisan</title>
-        <meta name="description" content="{{aboutMe}}"/>
-        <meta name="author" content="Jigar Jain">
-        <link rel="author" href="https://plus.google.com/+JigarJain1"/>
-    </head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/profile#">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jigar Jain - Web Artisan</title>
+    <meta name="description" content="I am a `Web artisan` from Bangalore who loves CSS &amp; design"/>
+    <link rel="author" href="https://plus.google.com/+JigarJain1"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="http://jigarjain.com" />
+    <meta property="og:site_name" content="Jigar Jain" />
+    <meta property="article:author" content="http://facebook.com/jjain91" />
+    <meta property="og:image" content="http://jigarjain.com/assets/img/jigarjain.jpg" />
+    <meta name="twitter:card" content="I am a `Web artisan` from Bangalore who loves CSS &amp; design"/>
+    <meta name="twitter:domain" content="http://jigarjain.com"/>
+    <meta name="twitter:creator" content="@ragij"/>
 
-    <body>
-
-        <div class="container">
-            <div class="page">
-                <h1 class="name">{{name}}</h1>
-                <p class="about-me">{{aboutMe}}</p>
-
-                {{#each items}}
-                <div class="item">
-                    <h3 class="another-title">{{title}}</h3>
-                    <ul class="list-container">
-                        {{#each content}}
-                        <li><a href="{{url}}"> {{text}} {{#if date}}<span class="date">{{date}}</span>{{/if}}</a></li>
-                        {{/each}}
-                    </ul>
-                    {{#if metaLink}}
-                    <p class="more-link">
-                        <a href="{{metaLink.url}}">{{metaLink.text}}</a>
-                    </p>
-                    {{/if}}
-                </div> <!-- /.item -->
-                {{/each}}
-
-                <div class="divider"></div>
-
-                <div class="item">
-                    <ul class="social">
-                        {{#each social}}
-                        <li><a href="{{url}}">{{text}}</a></li>
-                        {{/each}}
-                    </ul>
-                </div> <!-- /.item -->
-
-            </div> <!-- /.page -->
-
-            <small class="format">
-                <a href="/?format=json" rel="nofollow">View in json format</a>
-            </small>
+    <link href='//fonts.googleapis.com/css?family=Varela+Round|Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/profile/assets/css/presentation.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container page-user-profile" itemscope itemtype="http://schema.org/Person">
+        <div class="row">
+            <div class="col-sm-12 banner">
+                <a href="http://jigarjain.com" itemprop="url"><img src="/profile/assets/img/jigarjain.jpg" class="banner-profile-img" itemprop="image"></a>
+                <h1 class="banner-profile-name" itemprop="name">Jigar Jain</h1>
+                <h5 class="banner-profile-job" itemprop="jobTitle">Web Artisan</h5>
+            </div>
         </div>
+        <div class="row details-section">
+            <div class="col-sm-12 col-md-8 primary">
+                <div class="user-item user-about">
+                    <h2>About me</h2>
+                    <p>I am a `Web artisan` from Bangalore who <i class="fa fa-heart red"></i> CSS &amp; design. With around 3 years experience in working with couple of startups, I have gained expertise in various domains of web application &amp; particularly in Front-end.
+                    <br><br>
+                    I have joined startups at their early stages &amp; have steered the technology growth by building core systems from grounds up. I also use git workflow model for code management &amp; follow Agile method for project management. When it comes to DevOps, I use Amazon services
+                    like EC2, RDS, Route53, SQS, Cloudwatch &amp; S3.
+                    <br><br>
+                    I am a Batman fan, Calvin-Hobbes admirer &amp; probably the only programmer who doesn't like coffee :P On weekends I can be found watching some cult movie, reading a book or practising violin.</p>
 
-        <link rel="stylesheet" type="text/css" href="assets/css/app.css">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300">
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-36996932-1']);
-            _gaq.push(['_trackPageview']);
+                    <div class="tbl-d user-sub-item user-skills">
+                        <h5 class="tbl-r-d title">Front-end skills</h5>
+                        <div class="tbl-r-d">
+                            <div class="tbl-c-d content">
+                                <ul>
+                                    <li><i class="fa fa-tag"></i> CSS3</li>
+                                    <li><i class="fa fa-tag"></i> Javascript</li>
+                                    <li><i class="fa fa-tag"></i> LESS</li>
+                                    <li><i class="fa fa-tag"></i> Handlebars</li>
+                                    <li><i class="fa fa-tag"></i> Require.js</li>
+                                    <li><i class="fa fa-tag"></i> Bootstrap</li>
+                                    <li><i class="fa fa-tag"></i> Foundation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-    </body>
+                    <div class="tbl-d user-sub-item user-skills">
+                        <h5 class="tbl-r-d title">Back-end Skills</h5>
+                        <div class="tbl-r-d">
+                            <div class="tbl-c-d content">
+                                <ul>
+                                    <li><i class="fa fa-tag"></i> Node.js</li>
+                                    <li><i class="fa fa-tag"></i> Express.js</li>
+                                    <li><i class="fa fa-tag"></i> MySQL</li>
+                                    <li><i class="fa fa-tag"></i> Nginx</li>
+                                    <li><i class="fa fa-tag"></i> Apache</li>
+                                    <li><i class="fa fa-tag"></i> Amazon Web Services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tbl-d user-sub-item user-skills">
+                        <h5 class="tbl-r-d title">Tools &amp; Management</h5>
+                        <div class="tbl-r-d">
+                            <div class="tbl-c-d content">
+                                <ul>
+                                    <li><i class="fa fa-tag"></i> Git</li>
+                                    <li><i class="fa fa-tag"></i> Grunt</li>
+                                    <li><i class="fa fa-tag"></i> Bower</li>
+                                    <li><i class="fa fa-tag"></i> JIRA</li>
+                                    <li><i class="fa fa-tag"></i> Agile/Scrum</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user-item user-projects">
+                    <h2>Side Projects</h2>
+                    <ul class="user-projects-list">
+                        <li>
+                            <h3 class="project-name">countTags</h3>
+                            <div class="project-desc">
+                                Given a URL, this app will parse HTML &amp; CSS from it to present a detailed breakdown of the tags, classes, id, colors &amp; fonts used.
+                                This app is built on Node.js &amp; MongoDB.
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jigarjain/countTags/" target="_blank" class="link">Github</a>
+                                <a href="http://jigarjain/apps/countTags" target="_blank" class="link">Demo</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="project-name">cssZen</h3>
+                            <div class="project-desc">
+                                A collection of some stuff made using pure CSS. No javascript.
+                                Advanced CSS selectors, properties &amp; CSS hacks are demonstrated.
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jigarjain/csszen" target="_blank" class="link">Github</a>
+                                <a href="http://jigarjain.github.io/csszen" target="_blank" class="link">Demo</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="project-name">MySanta</h3>
+                            <div class="project-desc">
+                                A online secret santa platform for Christmas 2014, where people from various cities in India can participate.
+                                Built using Node.js, Express &amp; MongoDb.
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jigarjain/mysanta" target="_blank" class="link">Github</a>
+                                <a href="http://mysanta.in" target="_blank" class="link">Demo</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="user-item user-talks">
+                    <h2>Talks &amp; Articles</h2>
+                    <ul>
+                        <li><a href="http://jigarjain.github.io/less-introduction/" target="_blank">Simplifying CSS using LESS</a> - Bangalore CSS Meetup</li>
+                        <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-opencart-on-an-ubuntu-12-04-vps">How to install Opencart on Ubuntu 12.04</a> - Plublished on Digital Ocean</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="user-item user-testimonials">
+                    <h2>Testimonials</h2>
+                    <div class="m-comment-container tbl-d">
+                        <div class="m-comment tbl-r-d">
+                            <div class="comment-user tbl-c-d">
+                                <a href="#"><img src="/profile/assets/img/jigarjain.jpg"></a>
+                                <a href="#">Bruce Wayne</a>
+                            </div>
+                            <div class="comment-text tbl-c-d">
+                                <p>
+                                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+                                    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                                </p>
+                                <div class="comment-meta">
+                                    <ul>
+                                        <li><a href="#">Protecting all the old men on our planet earth</a></li>
+                                        <li>Credited 3 hours</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div> <!-- /.primary -->
+
+            <div class="col-sm-12 col-md-4 secondary">
+                <div class="user-item">
+                    <ul class="user-details icon-ul">
+                        <li><i class="fa fa-map-marker icon-li"></i>Bangalore, KA, India</li>
+                        <li itemprop="gender"><i class="fa fa-mars icon-li"></i> Male</li>
+                        <li><i class="fa fa-graduation-cap icon-li"></i> Bachelors in CS</li>
+                        <li itemprop="worksFor"><i class="fa fa-suitcase icon-li"></i> <a href="https://grallo.com/" target="_blank" title="Work">grallo.com</a></li>
+                        <li><i class="fa fa-envelope-o icon-li"></i> jjain91 {gmail.com}</li>
+                    </ul>
+                </div>
+
+                <div class="user-item">
+                    <h3 class="title">Online Presence</h3>
+                    <ul class="user-details icon-ul">
+                        <li><i class="fa fa-pencil icon-li"></i><a href="http://jigarjain.com/blog" target="_blank" title="Blog">jigarjain.com/blog</a></li>
+                        <li><i class="fa fa-github icon-li"></i><a href="https://github.com/jigarjain" target="_blank" title="Github profile">github.com/jigarjain</a></li>
+                        <li><i class="fa fa-stack-exchange icon-li"></i><a href="http://stackexchange.com/users/1005958/jigar-jain?tab=accounts" title="Stackoverflow profile">stackexchange.com/users/1005958</a></li>
+                        <li><i class="fa fa-twitter icon-li"></i><a href="https://twitter.com/@ragiJ" target="_blank" title="Twitter profile">twitter.com/ragiJ</a></li>
+                        <li><i class="fa fa-google-plus icon-li"></i><a href="https://plus.google.com/+JigarJain1" target="_blank" title="Twitter profile">plus.google.com/+JigarJain1</a></li>
+                        <li><i class="fa fa-angellist icon-li"></i><a href="https://angel.co/jigarjain" target="_blank" title="Angel list profile">angel.co/jigarjain</a></li>
+                        <li><i class="fa fa-linkedin icon-li"></i><a href="https://www.linkedin.com/in/jigarjain" target="_blank" title="LinkedIn profile">linkedin.com/in/jigarjain</a></li>
+                    </ul>
+                </div>
+            </div> <!-- /.secondary -->
+        </div>
+        <footer>
+            <small>Want to talk? Tweet me <a href="https://twitter.com/ragiJ" target="_blank">@ragiJ</a></small>
+        </footer>
+    </div> <!-- /.page-user-profile -->
 </html>

@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    .font-size(1.6);
+    font-family: @secondary-font;
+    color: @primary-text-color;
+    background-color: @background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @primary-font;
+}
+
+a {
+    color: @primary-green;
+    .transition(all 0.2s ease);
+
+    &:hover {
+        color: @dark-accent-green;
+        text-decoration: none;
+    }
+}
+
+footer {
+    margin-bottom: 30px;
+    color: @primary-grey;
+    text-align: center;
+}

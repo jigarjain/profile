@@ -1,0 +1,185 @@
+.page-user-profile {
+
+    .banner {
+        &-profile-img {
+            display: block;
+            margin: 30px auto 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 150px;
+        }
+
+        &-profile-name {
+            margin: 5px;
+            text-align: center;
+        }
+
+        &-profile-job {
+            margin: 5px;
+            font-weight: 300;
+            .font-size(1.6);
+            font-family: @secondary-font;
+            text-align: center;
+        }
+    }
+
+    .details-section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+
+        .secondary {
+            border-left: 1px solid lighten(@primary-text-color, 55%);
+        }
+    }
+
+    .user-item {
+        margin: 45px 0;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    .user-sub-item {
+        margin: 20px 0;
+    }
+
+    .red {
+        color: #CD212A;
+    }
+
+    .user-skills {
+        width: 100%;
+
+        .title, .content {
+            padding: 10px 0;
+        }
+
+        .title {
+            .font-size(1.8);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+            width: 33%;
+            padding: 3px;
+        }
+
+        i {
+            color: @light-accent-grey;
+        }
+    }
+
+    .user-projects-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            width: 33%;
+            flex-grow: 1;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid lighten(@primary-text-color, 55%);
+        }
+
+        .project-name {
+            margin: 0;
+            font-family: @secondary-font;
+            text-align: center;
+        }
+
+        .project-desc {
+            padding: 15px 0;
+            min-height: 130px;
+            .font-size(1.4);
+            border-bottom: 1px solid lighten(@primary-text-color, 55%);
+        }
+
+        .project-links {
+            padding-top: 10px;
+            text-align: center;
+
+            .link {
+
+                &:after {
+                    display: inline-block;
+                    content: " | ";
+                    margin: 0 10px;
+                    color: @primary-text-color;
+                }
+
+                &:last-of-type:after {
+                    content: "";
+                }
+            }
+        }
+    }
+
+    .user-talks {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .user-details {
+        margin: 0 0 0 25px; /* offsetting margin set by icon-li */
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin: 5px 0;
+        }
+
+        i {
+            display: inline-block;
+            margin-right: 5px;
+            color: @primary-grey;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-max) {
+    .page-user-profile {
+        .details-section {
+            flex-direction: column;
+
+            .secondary {
+                border: none;
+            }
+        }
+
+        .user-skills-preferences {
+            li {
+                display: inline-block;
+                width: 49%;
+                padding: 3px;
+            }
+        }
+
+        .user-projects-list {
+            flex-direction: column;
+
+            li {
+                margin: 0 auto 10px;
+                min-height: 0;
+                width: 100%;
+            }
+        }
+    }
+}

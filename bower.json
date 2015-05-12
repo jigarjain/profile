@@ -1,0 +1,20 @@
+{
+  "name": "profile",
+  "version": "3.0.0",
+  "authors": [
+    "Jigar Jain <jigar@grallo.com>"
+  ],
+  "description": "Profile page",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lesshat": "3.0.2"
+  }
+}

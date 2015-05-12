@@ -1,0 +1,29 @@
+
+/** Font styles **/
+@primary-font: 'Varela Round', sans-serif;
+@secondary-font: 'Source Sans Pro', sans-serif;
+
+/** Colors **/
+@primary-green: #8BC34A;
+@light-accent-green: lighten(@primary-green, 15%);
+@lighter-accent-green: lighten(@primary-green, 15%);
+@dark-accent-green: darken(@primary-green, 15%);
+@darker-accent-green: darken(@primary-green, 30%);
+
+@primary-text-color: #565a5c;
+
+@primary-grey: #9e9e9e;
+@light-accent-grey: lighten(@primary-grey, 15%);
+@lighter-accent-grey: lighten(@primary-grey, 30%);
+@dark-accent-grey: darken(@primary-grey, 15%);
+@darker-accent-grey: darken(@primary-grey, 30%);
+@background-color: #FAFAFA;
+
+
+
+/** Mixins **/
+.font-size(@sizeValue) {
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    font-size: ~"@{pxValue}px";
+}

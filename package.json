@@ -1,8 +1,8 @@
 {
   "name": "profile",
-  "version": "2.0.0",
-  "description": "Homepage for jigarjain.com",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +10,14 @@
     "type": "git",
     "url": "git@bitbucket.org:jigarjain/profile-design.git"
   },
-  "author": "Jigar Jain",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "compression": "^1.2.0",
-    "express": "^4.10.2",
-    "handlebars": "^2.0.0"
+    "grunt": "^0.4.5",
+    "grunt-contrib-csslint": "^0.4.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jscs": "^1.5.0"
   }
 }

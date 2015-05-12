@@ -1,0 +1,262 @@
+.page-user-profile {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: 100%;
+
+    .banner {
+        text-align: center;
+
+        &-profile-img {
+            display: block;
+            margin: 30px auto 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+        }
+
+        &-profile-name {
+            margin: 15px;
+        }
+
+        &-profile-job {
+            margin: 0;
+            font-weight: normal;
+            .font-size(1.6);
+            font-family: @secondary-font;
+        }
+    }
+
+    .details-section {
+        display: table;
+        margin: 30px 0;
+        width: 100%;
+
+        .primary, .secondary {
+            display: table-cell;
+            vertical-align: top;
+            padding: 0 30px;
+        }
+
+        .primary {
+            max-width: 750px;
+            border-right: 1px solid lighten(@primary-text-color, 55%);
+        }
+    }
+
+    .user-item {
+        margin: 60px 0;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    .user-sub-item {
+        margin: 30px 0;
+    }
+
+    .heart {
+        display: inline-block;
+        margin: 0 3px;
+        color: #ef5350;
+        .animation(pulse 1s linear infinite);
+    }
+
+    .user-skills {
+        width: 100%;
+
+        .title, .content {
+            padding: 10px 0;
+        }
+
+        .title {
+            .font-size(1.8);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 33%;
+            padding: 3px;
+        }
+
+        i {
+            color: lighten(@light-accent-grey, 10%);
+        }
+    }
+
+    .user-projects-list {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: block;
+            box-sizing: border-box;
+            width: 33%;
+            flex-grow: 1;
+            margin-right: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid lighten(@primary-text-color, 55%);
+            .transition(0.5s ease);
+
+            &:hover {
+                .box-shadow(0 4px 3px -3px @primary-grey);
+            }
+        }
+
+        .project-name {
+            margin: 0;
+            font-family: @secondary-font;
+            text-align: center;
+        }
+
+        .project-desc {
+            padding: 15px 0;
+            min-height: 130px;
+            .font-size(1.4);
+            border-bottom: 1px solid lighten(@primary-text-color, 55%);
+        }
+
+        .project-links {
+            padding-top: 10px;
+            text-align: center;
+
+            .link {
+
+                &:after {
+                    display: inline-block;
+                    content: " | ";
+                    margin: 0 10px;
+                    color: @primary-text-color;
+                }
+
+                &:last-of-type:after {
+                    content: "";
+                }
+            }
+        }
+    }
+
+    .user-talks {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .user-details {
+        margin: 0 0 0 25px; /* offsetting margin set by icon-li */
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin: 5px 0;
+        }
+
+        i {
+            display: inline-block;
+            margin-right: 5px;
+            color: @primary-grey;
+        }
+    }
+}
+
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    50% {
+        -moz-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    50% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 991px) {
+    .page-user-profile {
+        .details-section {
+            display: block;
+
+            .primary, .secondary {
+                padding: 0 5px;
+                display: block;
+                border: none;
+            }
+        }
+
+        .user-skills {
+            li {
+                width: 49%;
+            }
+        }
+
+        .user-projects-list {
+            flex-direction: column;
+
+            li {
+                margin: 0 auto 10px;
+                min-height: 0;
+                width: 100%;
+            }
+        }
+    }
+}
